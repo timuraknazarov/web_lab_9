@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab9</title>
+    <link rel="stylesheet" href="lab9css.css">
+    <script src="lab9js.js"></script>
+</head>
+<body>
+    <main>
+        <input class="input" type="text">
+        <table class="buttons">
+            <tr>
+                <td><button class="lgr" onclick="clear_()">AC</button></td>
+                <td><button class="lgr" onclick="deleteSymbol()">←</button></td>   
+                <td><button class="lgr"></button></td>
+                <td><button class="orng" onclick="operation('/')">÷</button></td>
+                            
+            </tr>
+            <tr>
+                <td><button onclick="digit(7)">7</button></td>
+                <td><button onclick="digit(8)">8</button></td>
+                <td><button onclick="digit(9)">9</button></td>
+                <td><button class="orng" onclick="operation('*')">×</button></td>
+                
+            </tr>
+            <tr>
+                <td><button onclick="digit(4)">4</button></td>
+                <td><button onclick="digit(5)">5</button></td>
+                <td><button onclick="digit(6)">6</button></td>
+                <td><button class="orng" onclick="operation('-')">-</button></td>
+                
+            </tr>
+            <tr>
+                <td><button onclick="digit(1)">1</button></td>
+                <td><button onclick="digit(2)">2</button></td>
+                <td><button onclick="digit(3)">3</button></td>           
+                <td><button class="orng" onclick="operation('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="null" onclick="digit(0)">0</button></td>
+                <td><button onclick="point()">.</button></td>
+                <td><button class="equal orng" onclick="equal()">=</button></td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
